@@ -24,3 +24,7 @@ Once the Arduino IDE is available we can add support for the development boards 
 
 ![Board Manager screenshot](https://i.imgur.com/cvi7Hbl.png)
 
+---
+*Link to this project page:*
+
+![QR shortcut to this project](http://i.imgur.com/FNq8hDJ.png)
