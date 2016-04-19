@@ -19,7 +19,7 @@ Once the Arduino IDE is available we can add support for the development boards 
 
 1. Launch the Arduino application
 2. Select the "File" menu, then "Preferences"
-3. In the box labeled "Additional Boards Manager URLs" paste the following URL: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
+3. Paste the following URL in the box labeled "Additional Boards Manager URLs": `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
 4. Click OK to accept the changes
 
 ![Board Manager screenshot](https://i.imgur.com/cvi7Hbl.png)
