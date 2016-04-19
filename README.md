@@ -1,4 +1,4 @@
-# IoTWM ESP8266
+# ESP8266 for IoT
 ###### Getting started with Arduino and the ESP8266 for IoT development
 
 This presentation will require the use of some simple free tools on your computer.  Download and install the items listed below before the presentation so you'll be ready to hack once we get started.
