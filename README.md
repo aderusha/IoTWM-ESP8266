@@ -6,7 +6,7 @@ This presentation will require the use of some simple free tools on your compute
 ### Requirements
 - A Windows, OSX, or Linux computer with an available USB port
 - A micro-USB cable
-- An ESP8266 development board (I'll be providing this part)
+- An ESP8266 development board (we'll be providing this part)
 
 ### Install the Arduino IDE
 Download the Arduino IDE for your operating system and install with the instructions linked below
