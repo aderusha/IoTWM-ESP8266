@@ -11,7 +11,7 @@ This presentation will require the use of some simple free tools on your compute
 ### Install the Arduino IDE
 Download the Arduino IDE for your operating system and install with the instructions linked below
 
-- [Download link](http://www.arduino.cc/en/main/software)
+- [Software download](http://www.arduino.cc/en/main/software)
 - [Installation instructions](http://www.arduino.cc/en/Guide/HomePage)
 
 ### Configure the ESP8266 Board Manager
