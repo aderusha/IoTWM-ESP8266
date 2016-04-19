@@ -1,7 +1,12 @@
 # IoTWM ESP8266
 ###### Getting started with Arduino and the ESP8266 for IoT development
 
-This presentation will require the use of some simple free tools to get started.  Download and install the items listed below before the presentation so you'll be ready to hack once we get started.
+This presentation will require the use of some simple free tools on your computer.  Download and install the items listed below before the presentation so you'll be ready to hack once we get started.
+
+### Requirements
+- A Windows, OSX, or Linux computer with an available USB port
+- A micro-USB cable
+- An ESP8266 development board (I'll be providing this part)
 
 ### Install the Arduino IDE
 Download the Arduino IDE for your operating system and install with the instructions linked below
