@@ -3,7 +3,7 @@
 This series of tutorials will cover several approaches to utilizing the ESP8266 platform for IoT device development and experimentation.  Each tutorial stands alone and can be used as a starting point for your own projects.
 
 # Witty Cloud development board
-The board we'll be using is the Witty Cloud board produced by [GizWits](http://www.gizwits.com/) as a tool for utilizing their IoT cloud service.  This board provides an easy-to-use platform for experimentation with the ESP8266 including simple inputs and outputs along with a USB programming  interface and which is [available at a very low cost to users  around the world](http://www.aliexpress.com/item/ESP8266-serial-WIFI-Witty-cloud-Development-Board-ESP-12F-module-MINI-nodemcu/32566502491.html).
+The board we'll be using is the Witty Cloud board produced by [GizWits](http://www.gizwits.com/) as a tool for utilizing their IoT cloud service.  This board provides an easy-to-use platform for experimentation with the ESP8266 including simple inputs and outputs along with a USB programming  interface and which is [available at a very low cost to users  around the world](http://www.aliexpress.com/wholesale?catId=0&SearchText=Witty+cloud+Development+Board).
 
 Like most things involving the ESP8266, the [Witty Cloud development environment](http://site.gizwits.com/zh-cn/developer/), documentation, mobile apps, and reference libraries are all in Chinese.  In response a community effort has ported the development tools into the Arduino environment and has built a wide range of libraries for use in the Arduino IDE.  It is because of these efforts that we are able to use this inexpensive board in a simple development environment today.
 
@@ -14,7 +14,7 @@ Like most things involving the ESP8266, the [Witty Cloud development environment
 We'll start with the "hello world" of the embedded world and blink some LEDs.  Learn how to upload and run programs on the ESP8266, then learn how to read input and utilize serial output.
 
 ### [02_WiFi_and_REST](../02_WiFi_and_REST)
-Connect the ESP8266 to wireless and send commands to the device via REST.  Uses the [aREST library](https://github.com/marcoschwartz/aREST) for Arduino and ESP8266.
+Connect the ESP8266 to WiFi and send commands to the device via REST.  Uses the [aREST library](https://github.com/marcoschwartz/aREST) for Arduino and ESP8266.
 
 ### [03_MQTT](../03_MQTT)
 Publish and subscribe to topics on a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
