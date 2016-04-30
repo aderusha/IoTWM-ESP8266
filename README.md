@@ -29,11 +29,11 @@ The development board we'll be using has a CH341 USB-to-serial chipset which req
 #### Windows 10
 No driver is required because Windows 10 is great and Just Works.
 #### Windows 7/8
-You should probably upgrade to Windows 10 (see above), otherwise [click here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_ZIP.html) to download the Windows driver from the chipset manufacturer's website.
+You should probably upgrade to Windows 10 (see above), otherwise [click here](http://www.wch.cn/downfile/5) to download the Windows driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_ZIP.html).
 #### Mac OSX
-You should probably upgrade to Windows 10 (see above), otherwise [click here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_MAC_ZIP.html) to download the OSX driver from the chipset manufacturer's website.
+You should probably upgrade to Windows 10 (see above), otherwise [click here](http://www.wch.cn/downfile/178) to download the OSX driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_MAC_ZIP.html).
 #### Linux
-You should probably reconsider the life decisions that led you to run Linux on a laptop and then download the drivers [here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
+You should probably reconsider the life decisions that led you to run Linux on a laptop and then [download the drivers](http://www.wch.cn/downfile/177) from [the manufacturer's site](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
 
 ---
 *Link to this project page:*
