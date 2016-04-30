@@ -24,6 +24,8 @@ Connect your device to the cloud and create a mobile app interface to control it
 
 # Reference material
 ### Witty Cloud Pinout
+*[source](http://www.schatenseite.de/en/2016/04/22/esp8266-witty-cloud-module/)*
+
 | Label | Pin (Arduino) | Purpose |
 | --- | --- | --- |
 | REST | — | Reset |
@@ -37,11 +39,12 @@ Connect your device to the cloud and create a mobile app interface to control it
 | TXD | TX | Serial interface |
 | RXD | RX | Serial interface |
 | GPIO5 | D1 | GPIO, freely usable |
-| GPIO4 | D2 | GPIO, connected to pushbutton |
+| GPIO4 | D2 | GPIO, connected to pushbutton (LOW=pressed) |
 | GPIO0 | D3 | GPIO, connected to flash-button, not really freely usable |
 | GPIO2 | D4 | GPIO, connected to blue LED on the ESP-Module |
 | GPIO15 | D8 | GPIO, red channel of RGB-LED |
 | GND | — | Ground |
+
 
 * [Witty Cloud board diagram](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg)
 * [ESP8266 pin mapping for Arduino](https://github.com/esp8266/Arduino/blob/master/variants/nodemcu/pins_arduino.h#L31-47)
