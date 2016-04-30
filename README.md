@@ -24,6 +24,17 @@ Once the Arduino IDE is available we can add support for the development boards 
 
 ![Board Manager screenshot](https://i.imgur.com/cvi7Hbl.png)
 
+### Install Serial Drivers
+The development board we'll be using has a CH341 USB-to-serial chipset which requires drivers on many systems.
+## Windows 10
+No driver is required because Windows 10 is great and Just Works.
+## Windows 7/8
+You should probably upgrade to Windows 10 (see above), otherwise [click here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_ZIP.html) to download the Windows driver from the chipset manufacturer's website.
+## Mac OSX
+You should probably upgrade to Windows 10 (see above), otherwise [click here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_MAC_ZIP.html) to download the OSX driver from the chipset manufacturer's website.
+## Linux
+You should probably reconsider the life decisions that led you to run Linux on a laptop and then download the drivers [here](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
+
 ---
 *Link to this project page:*
 
