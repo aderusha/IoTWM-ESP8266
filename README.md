@@ -22,7 +22,7 @@ Once the Arduino IDE is available we can add support for the development boards 
 3. Paste the following URL in the box labeled "Additional Boards Manager URLs": `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
 4. Click OK to accept the changes
 
-![Board Manager screenshot](https://i.imgur.com/cvi7Hbl.png)
+![Board Manager screenshot](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BoardManagerScreenshot.png)
 
 ### 3.) Install Serial Drivers
 The development board we'll be using has a CH341 USB-to-serial chipset which requires drivers on many systems.
