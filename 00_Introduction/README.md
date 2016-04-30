@@ -5,7 +5,7 @@ This series of tutorials will cover several approaches to utilizing the ESP8266 
 # Witty Cloud development board
 The board we'll be using is the Witty Cloud board produced by [GizWits](http://www.gizwits.com/) as a tool for utilizing their IoT cloud service.  This board provides an easy-to-use platform for experimentation with the ESP8266 including simple inputs and outputs along with a USB programming  interface and which is [available at a very low cost to users  around the world](http://www.aliexpress.com/item/ESP8266-serial-WIFI-Witty-cloud-Development-Board-ESP-12F-module-MINI-nodemcu/32566502491.html).
 
-Like most things involving the ESP8266, the [Witty Cloud documentation](http://site.gizwits.com/zh-cn/developer/), mobile apps, and reference libraries are all in Chinese.  In response a community effort has ported the development tools into the Arduino environment and has built a wide range of libraries for use in the Arduino IDE.  It is because of these efforts that we are able to use this inexpensive board in a simple development environment today.
+Like most things involving the ESP8266, the [Witty Cloud development environment](http://site.gizwits.com/zh-cn/developer/), documentation, mobile apps, and reference libraries are all in Chinese.  In response a community effort has ported the development tools into the Arduino environment and has built a wide range of libraries for use in the Arduino IDE.  It is because of these efforts that we are able to use this inexpensive board in a simple development environment today.
 
 <img src="https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg" width="600">
 
