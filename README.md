@@ -33,7 +33,7 @@ You should probably upgrade to Windows 10 (see above), otherwise [click here](ht
 #### Mac OSX
 You should probably upgrade to Windows 10 (see above), otherwise [click here](http://www.wch.cn/downfile/178) to download the OSX driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_MAC_ZIP.html).
 #### Linux
-You should probably reconsider the life decisions that led you to run Linux on a laptop and then [download the drivers](http://www.wch.cn/downfile/177) from [the manufacturer's site](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
+You should probably reconsider the life decisions that led you to run Linux on a laptop and then [click here](http://www.wch.cn/downfile/177) to download the drivers from [the manufacturer's site](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
 
 ---
 *Link to this project page:*
