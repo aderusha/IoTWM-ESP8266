@@ -25,6 +25,7 @@ The page should look something like this:
 ![Board Manager screenshot](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BoardManagerScreenshot.png)
 4. Click OK to accept the changes
 5. Select the "Tools" menu, "Board" menu, then "Boards Manager"
+6. Search for ESP8266, click on the "esp8266" board and select "Install"
 
 ##### 3. Install Serial Drivers
 The development board we'll be using has a CH341 USB-to-serial chipset which requires drivers on many systems.
