@@ -8,13 +8,13 @@ This presentation will require the use of some simple free tools on your compute
 - A micro-USB cable
 - An ESP8266 development board (we'll be providing this part)
 
-### Install the Arduino IDE
+### 1.) Install the Arduino IDE
 Download the Arduino IDE for your operating system and install with the instructions linked below
 
 - [Software download](http://www.arduino.cc/en/main/software)
 - [Installation instructions](http://www.arduino.cc/en/Guide/HomePage)
 
-### Configure the ESP8266 Board Manager
+### 2.) Configure the ESP8266 Board Manager
 Once the Arduino IDE is available we can add support for the development boards we'll be using.
 
 1. Launch the Arduino application
@@ -24,7 +24,7 @@ Once the Arduino IDE is available we can add support for the development boards 
 
 ![Board Manager screenshot](https://i.imgur.com/cvi7Hbl.png)
 
-### Install Serial Drivers
+### 3.) Install Serial Drivers
 The development board we'll be using has a CH341 USB-to-serial chipset which requires drivers on many systems.
 #### Windows 10
 No driver is required because Windows 10 is great and Just Works.
