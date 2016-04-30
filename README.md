@@ -39,4 +39,4 @@ You should probably reconsider the life decisions that led you to run Linux on a
 ---
 *Link to this project page:*
 
-![QR shortcut to this project](http://i.imgur.com/FNq8hDJ.png)
+![QR shortcut to this project](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/QRlink.png)

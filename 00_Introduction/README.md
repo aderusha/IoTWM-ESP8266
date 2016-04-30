@@ -7,7 +7,7 @@ The board we'll be using is the Witty Cloud board produced by [GizWits](http://w
 
 Unfortunately, the [documentation](http://site.gizwits.com/zh-cn/developer/), mobile apps, and reference libraries are all in Chinese.  As a result we'll need to rely on community efforts to document the platform and to create libraries for use in the Arduino IDE.
 
-<img src="http://i.imgur.com/pwaXoCt.jpg" width="600">
+<img src="https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg" width="600">
 
 # Tutorials
 ### [01_Blink](../01_Blink)
@@ -43,7 +43,7 @@ Connect your device to the cloud and create a mobile app interface to control it
 | GPIO15 | D8 | GPIO, red channel of RGB-LED |
 | GND | — | Ground |
 
-* [Witty Cloud board diagram](http://i.imgur.com/pwaXoCt.jpg)
+* [Witty Cloud board diagram](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg)
 * [ESP8266 pin mapping for Arduino](https://github.com/esp8266/Arduino/blob/master/variants/nodemcu/pins_arduino.h#L31-47)
 * [ESP8266 overview and history](https://en.wikipedia.org/wiki/ESP8266)
 
