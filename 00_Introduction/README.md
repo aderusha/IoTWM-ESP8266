@@ -10,8 +10,8 @@ Unfortunately, the [documentation](http://site.gizwits.com/zh-cn/developer/), mo
 <img src="https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg" width="600">
 
 # Tutorials
-### [01_Blink](../01_Blink)
-The "hello world" of the embedded world, we'll start with the simplest sketch possible and blink some LEDs.  Learn how to upload and run programs on the ESP8266.
+### [01_Basics](../01_Basics)
+We'll start with the "hello world" of the embedded world and blink some LEDs.  Learn how to upload and run programs on the ESP8266, then learn how to read input and utilize serial output.
 
 ### [02_WiFi_and_REST](../02_WiFi_and_REST)
 Connect the ESP8266 to wireless and send commands to the device via REST.  Uses the [aREST library](https://github.com/marcoschwartz/aREST) for Arduino and ESP8266.
