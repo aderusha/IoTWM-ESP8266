@@ -35,6 +35,7 @@ You should probably upgrade to Windows 10 (see above), otherwise [click here](ht
 #### Linux
 You should probably reconsider the life decisions that led you to run Linux on a laptop and then [click here](http://www.wch.cn/downfile/177) to download the drivers from [the manufacturer's site](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
 
+### 4.) [Get started with the tutorials](00_Introduction)
 ---
 *Link to this project page:*
 
