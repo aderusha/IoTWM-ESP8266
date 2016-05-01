@@ -13,11 +13,11 @@ Like most things involving the ESP8266, the [Witty Cloud development environment
 ### [01_Basics](../01_Basics)
 We'll start with the "hello world" of the embedded world and blink some LEDs.  Learn how to upload and run programs on the ESP8266, then learn how to read input and utilize serial output.
 
-### [02_WiFi_and_REST](../02_WiFi_and_REST)
-Connect the ESP8266 to WiFi and send commands to the device via REST.  Uses the [aREST library](https://github.com/marcoschwartz/aREST) for Arduino and ESP8266.
+### [02_WiFi](../02_WiFi)
+Learn how to interface with WiFi.  We'll create mesh networks, deploy a soft AP for gathering credentials, and connect to an AP.
 
-### [03_MQTT](../03_MQTT)
-Publish and subscribe to topics on a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
+### [03_REST_and_MQTT](../03_REST_and_MQTT)
+Send REST commands to your device, then publish/subscribe to a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
 
 ### [04_Blynk](../04_Blynk)
 Connect your device to the cloud and create a mobile app interface to control it from an Android or IOS device.
