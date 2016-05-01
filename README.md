@@ -23,9 +23,10 @@ Once the Arduino IDE is available we can add support for the development boards 
 3. Paste the following URL in the box labeled "Additional Boards Manager URLs": `http://arduino.esp8266.com/stable/package_esp8266com_index.json`
 The page should look something like this:
 ![Board Manager screenshot](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BoardManagerScreenshot.png)
-4. Click OK to accept the changes
-5. Select the "Tools" menu, "Board" menu, then "Boards Manager"
-6. Search for ESP8266, click on the "esp8266" board and select "Install"
+4. While we're here, check "Display line numbers"
+5. Click OK to accept the changes
+6. Select the "Tools" menu, "Board" menu, then "Boards Manager"
+7. Search for ESP8266, click on the "esp8266" board and select "Install"
 
 ##### 3. Install Serial Drivers
 The development board we'll be using has a CH341 USB-to-serial chipset which requires drivers on many systems.

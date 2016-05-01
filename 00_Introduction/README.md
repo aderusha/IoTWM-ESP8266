@@ -1,4 +1,3 @@
-# ESP8266 for IoT
 # Introduction
 This series of tutorials will cover several approaches to utilizing the ESP8266 platform for IoT device development and experimentation.  Each tutorial stands alone and can be used as a starting point for your own projects.
 
