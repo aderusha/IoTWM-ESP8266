@@ -49,6 +49,7 @@ Connect your device to the cloud and create a mobile app interface to control it
 * [Witty Cloud board diagram](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/WittyCloudBoard.jpg)
 * [ESP8266 pin mapping for Arduino](https://github.com/esp8266/Arduino/blob/master/variants/nodemcu/pins_arduino.h#L31-47)
 * [ESP8266 overview and history](https://en.wikipedia.org/wiki/ESP8266)
+* [Arduino core for ESP8266 project page](https://github.com/esp8266/Arduino)
 
 # Community resources
 * [The Arduino Community Forums](https://forum.arduino.cc/) - The epicenter of everything Arduino, suitable for beginners and experts alike.  If you're looking to interface with something, having trouble with code, or are just looking for ideas, this is the place to get started.

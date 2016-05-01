@@ -3,13 +3,13 @@
 Let's try some basics to get ourselves familiarized with the Arduino environment.
 
 ### The code
-#### [Blink](Blink)
+#### [Blink](Blink/Blink.ino)
 The "Hello world" of embedded devices, we'll start with a blinking LED along with displaying some serial output.  Demonstrates basic program structure, digital outputs, and writing to serial.
 
-#### [BlinkWithButton](BlinkWithButton)
+#### [BlinkWithButton](BlinkWithButton/BlinkWithButton.ino)
 Use the button to capture local user input and turn on the LED.  Demonstrates digital input and conditional statements.
 
-#### [NightLight](NightLight)
+#### [NightLight](NightLight/NightLight.ino)
 Detect ambient light conditions with the LDR and turn on a night light when it's dark, along with a button to toggle the device on and off.  Demonstrates analog input/output and nested conditional statements.
 
 ### The Process

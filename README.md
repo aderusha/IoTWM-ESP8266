@@ -43,3 +43,4 @@ No driver is required and the device should plug and play.
 *Link to this project page:*
 
 ![QR shortcut to this project](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/QRlink.png)
+# [github.com/aderusha/IoTWM-ESP8266](https://github.com/aderusha/IoTWM-ESP8266)

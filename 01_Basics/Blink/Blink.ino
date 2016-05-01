@@ -1,8 +1,8 @@
 /*
- Based on "ESP8266 Blink" by Simon Peter
- This example code is in the public domain
- 
- Blink the blue LED on the Witty Cloud
+  Based on "ESP8266 Blink" by Simon Peter
+  This example code is in the public domain
+
+  Blink the blue LED on the Witty Cloud
 */
 
 // Declare constants to map to specific pins on the Witty Cloud board
