@@ -6,7 +6,7 @@ The ESP8266 WiFi chipset provides the ability for your device to communicate wit
 #### [WiFiMesh](WiFiMesh/README.md)
 Create a WiFi mesh network for device-to-device communication without supporting infrastructure.  Learn how to use the built-in examples as a starting point for your own projects.
 
-#### WiFiManager
+#### WiFiManager(WiFiManager/README.md)
 Use the WiFiManager library for advanced WiFi connectivity and guided end-user device configuration.
 
 ### Resources
