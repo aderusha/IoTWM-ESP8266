@@ -1,5 +1,5 @@
 # WiFi Mesh
-Instead of providing code let's take a moment to check out the Arduino "example" sketches.  The core Arduino distribution includes examples for loads of concepts covering program structure and interfacing with common devices.  Adding new boards (as we did for the ESP8266) or new libraries (as we will do soon) can also add examples to the Arduino IDE.
+Instead of providing code let's take a moment to check out the Arduino "example" sketches.  The core Arduino distribution includes examples covering program structure and interfacing with common devices.  Adding new boards (as we did for the ESP8266) or new libraries (as we will do soon) can also add examples to the Arduino IDE.
 
 ### Requirements
 This exercise requires two or more ESP8266 devices in order for a mesh to be created.
