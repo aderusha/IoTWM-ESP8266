@@ -1,12 +1,13 @@
 /*
- Based on "AnalogInOutSerial" by Tom Igoe
- This example code is in the public domain.
+  Based on "AnalogInOutSerial" by Tom Igoe
+  This example code is in the public domain.
 
- Reads an analog input pin, maps the result to a range from 255 to 0
- and uses the result to set the pulsewidth modulation (PWM) of an output pin.
- Toggle the NightLight function on/off with the button, and write
- diagnostic information to the serial output.
- */
+  Reads an analog input pin, clips the value to a set max/min,
+  maps the result to a range from 255 to 0, and uses the result
+  to set the pulsewidth modulation (PWM) of an output pin.
+  Toggle the NightLight function on/off with the button, and write
+  diagnostic information to the serial output.
+*/
 
 // Declare constants to map to specific pins on the Witty Cloud board
 const int inputLDR = A0;   // Pin labeled ADC
@@ -14,12 +15,14 @@ const int inputButton = 4; // Pin labeled GPIO4
 const int ledRed = 15;     // Pin labeled GPIO15
 const int ledGreen = 12;   // Pin labeled GPIO12
 const int ledBlue = 13;    // Pin labeled GPIO13
+const int ldrMin = 100;    // Clip the LDR at max/min values for
+const int ldrMax = 400;    // use in varying light conditions
 
 // Declare global variables
-int sensorValue = 0;        // value read from the LDR
-int outputValue = 0;        // value output to the PWM (analog out)
-int powerToggle = 1;        // record power toggle state
-int buttonValue = 1;        // value read from the button
+int sensorValue = 0;       // value read from the LDR
+int outputValue = 0;       // value output to the PWM (analog out)
+int powerToggle = 1;       // record power toggle state
+int buttonValue = 1;       // value read from the button
 
 void setup() {
   pinMode(inputLDR, INPUT);    // initialize the LDR as an input
@@ -47,15 +50,22 @@ void loop() {
     // wait until the user releases the button
     while (buttonValue) {
       buttonValue = !digitalRead(inputButton);
-      delay(50);      
+      delay(50);
     }
   }
-  
+
   // read the LDR value
   sensorValue = analogRead(inputLDR);
+  // clip the recorded value at our defined max/min
+  if (sensorValue > ldrMax) {
+    sensorValue = ldrMax;
+  }
+  if (sensorValue < ldrMin) {
+    sensorValue = ldrMin;
+  }
   // map it to the range of the analog out,
   // inverting the values because it's a nightlight
-  outputValue = map(sensorValue, 0, 1023, 255, 0);
+  outputValue = map(sensorValue, ldrMin, ldrMax, 255, 0);
 
   if (powerToggle) {
     // write the RGB values out to the LED pins if we're powered on
