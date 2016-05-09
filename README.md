@@ -7,6 +7,7 @@ This presentation will require the use of some simple free tools on your compute
 - A Windows, OSX, or Linux computer with an available USB port
 - A micro-USB cable
 - An ESP8266 development board (we'll be providing this part)
+- An Android or IOS device (phone or tablet, only required for the last exercise)
 
 ### Setup Procedure
 ##### 1. Install the Arduino IDE
