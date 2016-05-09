@@ -1,7 +1,7 @@
 /*
   Clear out the filesystem and any saved settings on a
   Witty Cloud ESP8266 development board.
-  
+
   This code is in the public domain.
 */
 
@@ -62,7 +62,7 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Device erased.");
+  Serial.println("Device successfully erased.");
 
   // Flash LED blue/green once the process completes until the
   // heat death of the universe or the device is restarted.
