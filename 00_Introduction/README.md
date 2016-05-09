@@ -15,10 +15,13 @@ We'll start with the "hello world" of the embedded world and blink some LEDs.  L
 ### [02_WiFi](../02_WiFi)
 Learn how to interface with WiFi.  We'll create mesh networks, deploy a soft AP for gathering credentials, and connect to an AP.
 
-### [03_REST_and_MQTT](../03_REST_and_MQTT)
-Send REST commands to your device, then publish/subscribe to a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
+### [03_REST](../03_REST)
+Use the aREST library to send REST commands to your device with a web browser.
 
-### [04_Blynk](../04_Blynk)
+### [04_MQTT](../04_MQTT)
+Publish/subscribe to a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
+
+### [05_Blynk](../05_Blynk)
 Connect your device to the cloud and create a mobile app interface to control it from an Android or IOS device.
 
 # Reference material
