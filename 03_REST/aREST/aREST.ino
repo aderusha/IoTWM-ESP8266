@@ -45,11 +45,11 @@ void setup(void)
   // Init variables and expose them to REST API
   temperature = 24;
   humidity = 40;
-  rest.variable("temperature",&temperature);
-  rest.variable("humidity",&humidity);
+  rest.variable("temperature", &temperature);
+  rest.variable("humidity", &humidity);
 
   // Function to be exposed
-  rest.function("led",ledControl);
+  rest.function("led", ledControl);
 
   // Give name and ID to device
   rest.set_id("1");
@@ -57,6 +57,8 @@ void setup(void)
 
   // Connect to WiFi
   WiFi.begin(ssid, password);
+  Serial.print("Attempting connection to wireless network ");
+  Serial.print(ssid);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
@@ -66,10 +68,12 @@ void setup(void)
 
   // Start the server
   server.begin();
-  Serial.println("Server started");
+  Serial.print("Server started @ ");
 
   // Print the IP address
-  Serial.println(WiFi.localIP());
+  Serial.print(WiFi.localIP());
+  Serial.print(":");
+  Serial.println(LISTEN_PORT);
 }
 
 void loop() {
@@ -79,7 +83,7 @@ void loop() {
   if (!client) {
     return;
   }
-  while(!client.available()){
+  while (!client.available()) {
     delay(1);
   }
   rest.handle(client);
@@ -92,6 +96,6 @@ int ledControl(String command) {
   // Get state from command
   int state = command.toInt();
 
-  digitalWrite(ledRed,state);
+  digitalWrite(ledRed, state);
   return 1;
 }
