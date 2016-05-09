@@ -1,7 +1,13 @@
+/*
+  Clear out the filesystem and any saved settings on a
+  Witty Cloud ESP8266 development board.
+  
+  This code is in the public domain.
+*/
 
-#include <FS.h>                   //this needs to be first, or it all crashes and burns...
-#include <ESP8266WiFi.h>          //https://github.com/esp8266/Arduino
-#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager
+#include <FS.h>
+#include <ESP8266WiFi.h>
+#include <WiFiManager.h>
 #include <EEPROM.h>
 
 // Declare constants to map to specific pins on the Witty Cloud board
@@ -19,33 +25,37 @@ void setup() {
   Serial.begin(115200);
   Serial.print("\n\n\n");
 
+  // Set LED to blue while clearing EEPROM
   digitalWrite(ledRed, LOW);
   digitalWrite(ledGreen, LOW);
   digitalWrite(ledBlue, HIGH);
 
-  // write a 0 to all 512 bytes of the EEPROM
+  // Write a 0 to all 512 bytes of the EEPROM
   Serial.println("Clearing 512 bytes of EEPROM...");
   EEPROM.begin(512);
   for (int i = 0; i < 512; i++)
     EEPROM.write(i, 0);
 
+  // Set LED to red while formatting SPIFFS
   digitalWrite(ledRed, HIGH);
   digitalWrite(ledGreen, LOW);
   digitalWrite(ledBlue, LOW);
 
-  // format SPIFFS
+  // Format SPIFFS
   Serial.println("Formatting SPIFFS...");
   SPIFFS.format();
 
+  // Set LED to red while clearing WiFiManager settings
   digitalWrite(ledRed, HIGH);
   digitalWrite(ledGreen, LOW);
   digitalWrite(ledBlue, HIGH);
 
-  // clear WiFiManager settings, wherever they live
+  // Clear WiFiManager settings, wherever they live
   Serial.println("Clearing WiFiManager settings...");
   WiFiManager wifiManager;
   wifiManager.resetSettings();
 
+  // Set LED to green when completed
   digitalWrite(ledRed, LOW);
   digitalWrite(ledGreen, HIGH);
   digitalWrite(ledBlue, LOW);
@@ -53,6 +63,9 @@ void setup() {
 
 void loop() {
   Serial.println("Device erased.");
+
+  // Flash LED blue/green once the process completes until the
+  // heat death of the universe or the device is restarted.
   while (true) {
     digitalWrite(ledGreen, HIGH);
     digitalWrite(ledBlue, LOW);
