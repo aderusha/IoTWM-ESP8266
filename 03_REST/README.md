@@ -7,4 +7,4 @@ In the IDE select "Sketch" > "Include Library" > "Manage Libraries" to bring up 
 
 ![Add aREST library](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/AddArestLibrary.png)
 
-Open the "aREST.ino" sketch under [03_REST\aREST\aREST.ino](aREST\\aREST.ino).  Modify the WiFi credentials to connect to the wireless network, upload the sketch to your device, and observe the boot process in the Serial Monitor.
+Open the "aREST.ino" sketch under [03_REST\aREST\aREST.ino](aREST/aREST.ino).  Modify the WiFi credentials to connect to the wireless network, upload the sketch to your device, and observe the boot process in the Serial Monitor.
