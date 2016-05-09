@@ -1,9 +1,11 @@
 # WiFiManager
-Something something libraries
+Here we'll be using the [WiFiManager library for the ESP8266](https://tzapu.com/esp8266-wifi-connection-manager-library-arduino-ide/) which provides a number of extremely useful capabilities when connecting and authenticating to WiFi networks, simplifying access issues common to WiFi environments.
+
+Libraries are bundles of code that you can add to your own projects through the IDE.  Libraries are often used to simplify working with devices in the Arduino environment, allowing the user to focus on using the device itself without needing to deal with implementation-specific issues around the device's communication requirements.
 
 ### Process
 
-In the IDE select "Sketch" > "Include Library" > "Manage Libraries" to bring up the Library Manager window.  In this window we're going to search for "WiFiManager" by typing our search term in the filter dialog box in the upper right of the Library Manger.  Click on the desired library for more information, and select "Install" to download and install the selected libary into your IDE.
+In the IDE select "Sketch" > "Include Library" > "Manage Libraries" to bring up the Library Manager window.  In this window we're going to search for "WiFiManager" by typing our search term in the filter dialog box in the upper right of the Library Manger.  Click on the desired library for more information, and select "Install" to download and install the selected library into your IDE.
 
 ![Add WiFiManager library](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/AddWiFiManagerLibrary.png)
 
