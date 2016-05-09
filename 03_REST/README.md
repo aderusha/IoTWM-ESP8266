@@ -1,5 +1,5 @@
 # aREST
-Here we'll be using the [aREST framework](https://arest.io/) to provide us with the ability to interface with the ESP8266 utilizing common [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) commands.  A full discussion of RESTful interfaces is beyond the scope of this lesson, but at a rough approximation adding REST capabilities allows us to communicate with the ESP8266 using simple HTTP requests which you can enter in a web brower.
+Here we'll be using the [aREST framework](https://arest.io/) to provide us with the ability to interface with the ESP8266 utilizing common [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) commands.  A full discussion of RESTful interfaces is beyond the scope of this lesson, but at a rough approximation adding REST capabilities allows us to communicate with the ESP8266 using simple HTTP requests which you can enter in a web browser.
 
 ### Process
 
