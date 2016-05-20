@@ -16,7 +16,7 @@ We'll start with the "hello world" of the embedded world and blink some LEDs.  L
 Learn how to interface with WiFi.  We'll create mesh networks, deploy a soft AP for gathering credentials, and connect to an AP.
 
 ### [03_REST](../03_REST)
-Use the aREST library to send REST commands to your device with a web browser.
+Create a REST interface to send commands to your device with a web browser.
 
 ### [04_MQTT](../04_MQTT)
 Publish/subscribe to a public MQTT broker.  This tutorial relies on a cloud-based, public, and completely insecure broker for demo purposes.
