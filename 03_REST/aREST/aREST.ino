@@ -1,4 +1,4 @@
-/*
+/* 
   This a simple example of the aREST UI Library for the ESP8266.
   See the README file for more details.
 
@@ -40,11 +40,6 @@ void setup(void)
   // Start Serial
   Serial.begin(115200);
 
-  // Create button to control red LED
-  rest.button(ledRed);
-  rest.slider(ledBlue);
-  rest.title("aREST_UI demo");
-
   // Init variables and expose them to REST API
   //temperature = 22;
   //humidity = 39.1;
@@ -52,6 +47,12 @@ void setup(void)
   //rest.variable("humidity",&humidity);
   ldrLevel = analogRead(inputLDR);
   rest.variable("ldr",&ldrLevel);
+
+  // Create button to control red LED
+  rest.button(ledRed);
+  rest.slider(ledBlue);
+  rest.title("aREST_UI demo");
+  rest.label("ldr");
 
   // Function to be exposed
   rest.function("led",ledControl);
@@ -78,7 +79,6 @@ void setup(void)
   Serial.print(WiFi.localIP());
   Serial.print(":");
   Serial.println(LISTEN_PORT);
-
 }
 
 void loop() {
@@ -92,7 +92,7 @@ void loop() {
     delay(1);
   }
   rest.handle(client);
-
+  ldrLevel = analogRead(inputLDR);
 }
 
 int ledControl(String command) {
