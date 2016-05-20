@@ -161,7 +161,6 @@ void setup(void) {
   pinMode(ledBlue, OUTPUT);    // Initialize the blue LED pin as an output
 
   Serial.begin(115200);
-  WiFi.begin(ssid, password);
   Serial.println("");
 
   // Connect to WiFi
