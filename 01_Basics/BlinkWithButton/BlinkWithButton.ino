@@ -1,9 +1,10 @@
 /*
- Based on "Button" by DojoDave and Tom Igoe
- This example code is in the public domain.
+  Witty Cloud Night Light
+  Based on "Button" by DojoDave and Tom Igoe
+  This example code is in the public domain.
 
- Turns on an LED when the user presses a button
- */
+  Turns on an LED when the user presses a button
+*/
 
 // Declare constants to map to specific pins on the Witty Cloud board
 const int inputLDR = A0;   // Pin labeled ADC

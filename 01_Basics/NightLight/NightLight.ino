@@ -1,5 +1,5 @@
 /*
-  Based on "AnalogInOutSerial" by Tom Igoe
+  Witty Cloud Night Light
   This example code is in the public domain.
 
   Reads an analog input pin, clips the value to a set max/min,
