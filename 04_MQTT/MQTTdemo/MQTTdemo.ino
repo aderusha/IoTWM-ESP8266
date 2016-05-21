@@ -51,7 +51,7 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 long lastMsg = 0;
-char msg[50];
+char ldrMsg[6];
 
 void setup() {
   pinMode(inputLDR, INPUT);    // initialize the LDR as an input
@@ -128,7 +128,6 @@ void reconnect() {
       Serial.print("MQTT client connected as ");
       Serial.println(device_name);
       // Once connected, publish an announcement...
-      //client.publish(mqtt_topic, "MQTT client connected");
       client.publish(mqtt_topic.c_str(), "MQTT client connected");
       // ... and resubscribe
       client.subscribe(mqtt_subscription.c_str());
@@ -164,9 +163,9 @@ void loop() {
   if (now - lastMsg > 60000) {
     lastMsg = now;
     int ldrValue = analogRead(inputLDR);
-    snprintf (msg, 6, "%d", ldrValue);
-    Serial.print("Publishing LDR reading: ");
-    Serial.println(msg);
-    client.publish(mqtt_ldr.c_str(), msg);
+    snprintf (ldrMsg, 6, "%d", ldrValue);
+    Serial.print("Publishing LDR value: ");
+    Serial.println(ldrMsg);
+    client.publish(mqtt_ldr.c_str(), ldrMsg);
   }
 }
