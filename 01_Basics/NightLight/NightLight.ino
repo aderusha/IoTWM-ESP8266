@@ -15,8 +15,8 @@ const int inputButton = 4; // Pin labeled GPIO4
 const int ledRed = 15;     // Pin labeled GPIO15
 const int ledGreen = 12;   // Pin labeled GPIO12
 const int ledBlue = 13;    // Pin labeled GPIO13
-const int ldrMin = 100;    // Clip the LDR at max/min values for
-const int ldrMax = 400;    // use in varying light conditions
+const int ldrMin = 0;      // Clip the LDR at max/min values for
+const int ldrMax = 1024;   // use in varying light conditions
 
 // Declare global variables
 int sensorValue = 0;       // value read from the LDR
