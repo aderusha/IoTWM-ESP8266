@@ -46,3 +46,5 @@ No driver is required and the device should plug and play.
 
 ![QR shortcut to this project](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/QRlink.png)
 # [goo.gl/omE9Gy](https://github.com/aderusha/IoTWM-ESP8266)
+# WiFi SSID: EMBEDED
+# WiFi pass: buildit1
