@@ -17,10 +17,10 @@
 #include <PubSubClient.h>
 
 // Enter a unique value here
-const char* your_name = "YourName";
+const String your_name = "YourName";
 
 // Enter a partner device name here
-String partner_name = "PartnerName";
+const String partner_name = "PartnerName";
 
 // Update these with values suitable for your network.
 const char* ssid = "EMBEDED";
@@ -30,18 +30,18 @@ const char* mqtt_broker = "test.mosquitto.org";
 const char* mqtt_topic_base = "IoTWM-ESP8266";
 
 // setup topic and subscription strings
-String mqtt_topic = String(mqtt_topic_base) + "/" + String(your_name);
-String mqtt_subscription = mqtt_topic + "/#";
-String mqtt_red = mqtt_topic + "/red";
-String mqtt_green = mqtt_topic + "/green";
-String mqtt_blue = mqtt_topic + "/blue";
-String mqtt_ldr = mqtt_topic + "/ldr";
-String mqtt_button = mqtt_topic + "/button";
-String mqtt_partner_in = mqtt_topic + "/partner";
-String mqtt_partner_out = String(mqtt_topic_base) + "/" + partner_name + "/partner";
+const String mqtt_topic = String(mqtt_topic_base) + "/" + your_name;
+const String mqtt_subscription = mqtt_topic + "/#";
+const String mqtt_red = mqtt_topic + "/red";
+const String mqtt_green = mqtt_topic + "/green";
+const String mqtt_blue = mqtt_topic + "/blue";
+const String mqtt_ldr = mqtt_topic + "/ldr";
+const String mqtt_button = mqtt_topic + "/button";
+const String mqtt_partner_in = mqtt_topic + "/partner";
+const String mqtt_partner_out = String(mqtt_topic_base) + "/" + partner_name + "/partner";
 
 // MQTT Client ID should be unique to a broker
-String device_name = String(your_name) + "-" + String(ESP.getChipId());
+const String device_name = String(your_name) + "-" + String(ESP.getChipId());
 
 // Declare constants to map to specific pins on the Witty Cloud board
 const int inputLDR = A0;   // Pin labeled ADC
