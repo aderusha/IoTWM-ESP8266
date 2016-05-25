@@ -11,4 +11,6 @@ Under "File" > "Examples" > "Blynk" > "Boards_WiFi" select "ESP8266_Standalone" 
 
 Now install the mobile app for [IOS](https://itunes.apple.com/us/app/blynk-control-arduino-raspberry/id808760481?ls=1&mt=8) or [Android](https://play.google.com/store/apps/details?id=cc.blynk) and launch the application on your device.  Select "Create Account", enter your email address (use a real address that you have access to today), and assign a password.
 
-From the main Blynk screen select "Create New Project".  Enter a name for your project, then click on "Hardware Model" to bring up a list of supported boards.  Scroll until you find "ESP8266" and select "Continue"
+From the main Blynk screen select "Create New Project".  Enter a name for your project, then click on "Hardware Model" to bring up a list of supported boards.  Scroll until you find "ESP8266" and select "Continue".  Select "E-mail" to send yourself an email with the authentication token.  Click "Create" in the app and we can return to your computer to modify the sketch.
+
+Check your email for the auth token from blynk.cc.  Open the email on your computer, copy the token, and paste the result into line 34 like so: `char auth[] = "exampleauthtoken";`.  With the Blynk auth token and WiFi creds setup we are ready to upload your sketch to the board.
