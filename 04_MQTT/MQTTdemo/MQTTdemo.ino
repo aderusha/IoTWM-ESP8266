@@ -17,7 +17,7 @@
 #include <PubSubClient.h>
 
 // Enter a unique value here
-const char* device_name = "YourName";
+const char* your_name = "YourName";
 
 // Enter a partner device name here
 String partner_name = "PartnerName";
@@ -30,7 +30,7 @@ const char* mqtt_broker = "test.mosquitto.org";
 const char* mqtt_topic_base = "IoTWM-ESP8266";
 
 // setup topic and subscription strings
-String mqtt_topic = String(mqtt_topic_base) + "/" + String(device_name);
+String mqtt_topic = String(mqtt_topic_base) + "/" + String(your_name);
 String mqtt_subscription = mqtt_topic + "/#";
 String mqtt_red = mqtt_topic + "/red";
 String mqtt_green = mqtt_topic + "/green";
@@ -39,6 +39,9 @@ String mqtt_ldr = mqtt_topic + "/ldr";
 String mqtt_button = mqtt_topic + "/button";
 String mqtt_partner_in = mqtt_topic + "/partner";
 String mqtt_partner_out = String(mqtt_topic_base) + "/" + partner_name + "/partner";
+
+// MQTT Client ID should be unique to a broker
+String device_name = String(your_name) + "-" + String(ESP.getChipId());
 
 // Declare constants to map to specific pins on the Witty Cloud board
 const int inputLDR = A0;   // Pin labeled ADC
@@ -124,14 +127,16 @@ void reconnect() {
     Serial.print("Attempting MQTT connection to broker: ");
     Serial.println(mqtt_broker);
     // Attempt to connect
-    if (client.connect(device_name)) {
+    if (client.connect(device_name.c_str())) {
       Serial.print("MQTT client connected as ");
       Serial.println(device_name);
       // Once connected, publish an announcement...
       client.publish(mqtt_topic.c_str(), "MQTT client connected");
       // ... and resubscribe
       client.subscribe(mqtt_subscription.c_str());
-    } else {
+      Serial.print("MQTT client subscribed to topic: ");
+      Serial.println(mqtt_subscription);
+   } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
       Serial.println(". Trying again in 5 seconds.");
