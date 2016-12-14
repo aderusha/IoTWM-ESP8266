@@ -41,10 +41,4 @@ No driver is required and the device should plug and play.
 [Click here](http://www.wch.cn/downfile/177) to download the drivers from [the manufacturer's site](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_LINUX_ZIP.html).
 
 ### [Now get started with the tutorials!](00_Introduction)
----
-*Link to this project page:*
 
-![QR shortcut to this project](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/QRlink.png)
-# [goo.gl/omE9Gy](https://github.com/aderusha/IoTWM-ESP8266)
-# WiFi SSID: EMBEDED
-# WiFi pass: buildit1
