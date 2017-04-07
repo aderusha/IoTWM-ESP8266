@@ -20,7 +20,7 @@ On line 32 the example sketch prints a success message over serial.  Let's add a
 ```
 //if you get here you have connected to the WiFi
 Serial.println("connected...yeey :)");
-Serial.println("local ip");
+Serial.print("local ip: ");
 Serial.println(WiFi.localIP());
 ```
 On device bootup, WiFiManager will load and check for saved WiFi credentials.  As this is the first time we've run it, it creates a temporary AP and waits for us to connect.
