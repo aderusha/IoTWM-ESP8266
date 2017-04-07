@@ -11,7 +11,7 @@ This presentation will require the use of some simple free tools on your compute
 
 ### Setup Procedure
 ##### 1. Install the Arduino IDE
-Download the Arduino IDE for your operating system and install with the instructions linked below
+Download the Arduino IDE for your operating system and install with the instructions linked below.  We'll be using the downloaded version, so skip the sections regarding the online/cloud editor.
 
 - [Software download](http://www.arduino.cc/en/main/software)
 - [Installation instructions](http://www.arduino.cc/en/Guide/HomePage)
