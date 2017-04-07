@@ -34,7 +34,7 @@ The development board we'll be using has a CH341 USB-to-serial chipset which req
 ###### Windows 10
 No driver is required and the device should plug and play.
 ###### Windows 7/8
-[Click here](http://www.wch.cn/downfile/5) to download the Windows driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_ZIP.html).
+Drivers should automatically install via Windows Update or [Click here](http://www.wch.cn/downfile/5) to download the Windows driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_ZIP.html).
 ###### Mac OSX
 [Click here](http://www.wch.cn/downfile/178) to download the OSX driver from [the chipset manufacturer's website](https://translate.google.com/translate?hl=en&sl=zh-CN&u=http://www.wch.cn/download/CH341SER_MAC_ZIP.html).
 ###### Linux
