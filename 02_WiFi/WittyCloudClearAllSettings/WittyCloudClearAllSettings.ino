@@ -45,7 +45,7 @@ void setup() {
   Serial.println("Formatting SPIFFS...");
   SPIFFS.format();
 
-  // Set LED to red while clearing WiFiManager settings
+  // Set LED to purple while clearing WiFiManager settings
   digitalWrite(ledRed, HIGH);
   digitalWrite(ledGreen, LOW);
   digitalWrite(ledBlue, HIGH);
