@@ -19,8 +19,8 @@ const int ledBlue = 13;    // Pin labeled GPIO13
 
 void setup() {
   pinMode(ledRed, OUTPUT);     // Initialize the blue LED pin as an output
-  pinMode(ledGreen, OUTPUT);   // Initialize the blue LED pin as an output
-  pinMode(ledBlue, OUTPUT);    // Initialize the blue LED pin as an output
+  pinMode(ledGreen, OUTPUT);   // Initialize the green LED pin as an output
+  pinMode(ledBlue, OUTPUT);    // Initialize the red LED pin as an output
 
   Serial.begin(115200);
   Serial.print("\n\n\n");
