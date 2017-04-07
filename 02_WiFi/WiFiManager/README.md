@@ -13,7 +13,7 @@ As noted earlier, Arduino libraries often come with example sketches, and this o
 
 The AutoConnect sketch demonstrates a self-configuration portal for user provisioning of WiFi credentials.  The sketch checks for saved Wifi credentials, failing that, starts up it's own AP allowing the user to connect to the device and provide their WiFi creds through a browser.  The user will be presented with a list of networks and given a dialog box to enter the password.  These values will be saved on the device and will be used for future connections.
 
-Let's make a couple of modifications before uploading this to your device.  In line 26 change the value "AutoConnectAP" to your name.  It should look something like this: `wifiManager.autoConnect("JaneDoeAP");``
+Let's make a couple of modifications before uploading this to your device.  In line 26 change the value "AutoConnectAP" to your name.  It should look something like this: `wifiManager.autoConnect("JaneDoeAP");`
 
 On line 32 the example sketch prints a success message over serial.  Let's add a couple lines to that message to provide us with the IP address assignment which will help us when running and configuring this sketch.
 
