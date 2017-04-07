@@ -17,6 +17,6 @@ Detect ambient light conditions with the LDR and turn on a night light when it's
 3. In the "Tools" menu select "Port" and then the COM port assigned to your device.
 4. Compile the sketch with the Compile button and verify no errors are thrown.
 5. Upload the sketch to your device with the Upload button.
-6. Click the Serial Monitor button to monitor serial output.
+6. After the upload process reaches 100%, click the Serial Monitor button to monitor serial output.
 
 ![Arduino IDE](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/ArduinoIDE.png)
