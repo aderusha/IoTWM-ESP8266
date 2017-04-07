@@ -59,8 +59,8 @@ char ldrMsg[6];
 void setup() {
   pinMode(inputLDR, INPUT);    // initialize the LDR as an input
   pinMode(inputButton, INPUT); // initialize the button as an input
-  pinMode(ledRed, OUTPUT);     // Initialize the blue LED pin as an output
-  pinMode(ledGreen, OUTPUT);   // Initialize the blue LED pin as an output
+  pinMode(ledRed, OUTPUT);     // Initialize the red LED pin as an output
+  pinMode(ledGreen, OUTPUT);   // Initialize the green LED pin as an output
   pinMode(ledBlue, OUTPUT);    // Initialize the blue LED pin as an output
   Serial.begin(115200);
 
