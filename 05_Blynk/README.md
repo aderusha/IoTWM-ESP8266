@@ -11,6 +11,10 @@ Under "File" > "Examples" > "Blynk" > "Boards_WiFi" select "ESP8266_Standalone" 
 
 Now install the mobile app for [IOS](https://itunes.apple.com/us/app/blynk-control-arduino-raspberry/id808760481?ls=1&mt=8) or [Android](https://play.google.com/store/apps/details?id=cc.blynk) and launch the application on your device.  Select "Create Account", enter your email address (use a real address that you have access to today), and assign a password.
 
-From the main Blynk screen select "Create New Project".  Enter a name for your project, then click on "Hardware Model" to bring up a list of supported boards.  Scroll until you find "ESP8266" and select "Continue".  Select "E-mail" to send yourself an email with the authentication token.  Click "Create" in the app and we can return to your computer to modify the sketch.
+From the main Blynk screen select "Create New Project".  Enter a name for your project, then click on "Hardware Model" to bring up a list of supported boards.  Scroll until you find "ESP8266" and select "Continue".  Click "Create" in the app to save your settings and to send an "Auth Token" to your provided email account.
 
-Check your email for the auth token from blynk.cc.  Open the email on your computer, copy the token, and paste the result into line 34 like so: `char auth[] = "exampleauthtoken";`.  With the Blynk auth token and WiFi creds setup we are ready to upload your sketch to the board.
+Check your email account for a message from blynk.cc.  Open the email on your computer and look for the Auth Token which will be a 32-character string of letters and numbers.  Copy the token and switch back to the Arduino IDE on your PC.  Find line 35 in the example sketch and replace "YourAuthToken" with the token provided, like so: `char auth[] = "00112233445566778899aabbccddeeff";`.  On lines 39 and 40, replace "YourNetworkName" and "YourPassword" with the WiFi credentials for your network.  With the Blynk auth token and WiFi creds setup we are ready to upload your sketch to the board.
+
+Once the sketch is uploaded to your board you can now create your control interface in the Blynk mobile app.  With your Project open, click in the empty black area to bring up the Widget Box.  Select "Slider" to place a Slider control into the project.  Repeat this task two more times, placing a total of 3 sliders.
+
+Press again in the empty background to bring up the Widget Box, and this time select "Value Display".  Finally, repeat the process one last time and select "Graph".  You should now have 5 items in your project.
