@@ -7,7 +7,7 @@
 This sketch relies on the ["Blynk"](https://github.com/blynkkk/blynk-library) library for Arduino and ESP8266.  In the IDE select "Sketch" > "Include Library" > "Manage Libraries" to bring up the Library Manager window.  In this window we're going to search for "Blynk" by typing our search term in the filter dialog box in the upper right of the Library Manger.  Click on the desired library for more information, and select "Install" to download and install the selected library into your IDE.
 ![Add Blynk library](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/AddBlynkLibrary.png)
 
-Under "File" > "Examples" > "Blynk" > "Boards_WiFi" select "ESP8266_Standalone" to open an example sketch for the ESP8266 device.  On line 39 you'll find the command `Blynk.begin(auth, "ssid", "pass");`.  Change that statement to include the local WiFi credentials, like so: `Blynk.begin(auth, "EMBEDED", "buildit1");`
+Under "File" > "Examples" > "Blynk" > "Boards_WiFi" select "ESP8266_Standalone" to open an example sketch for the ESP8266 device.  On line 39 you'll find the command `Blynk.begin(auth, "ssid", "pass");`.  Change that statement to include the local WiFi credentials, like so: `Blynk.begin(auth, "wifi", "password");`
 
 Now install the mobile app for [IOS](https://itunes.apple.com/us/app/blynk-control-arduino-raspberry/id808760481?ls=1&mt=8) or [Android](https://play.google.com/store/apps/details?id=cc.blynk) and launch the application on your device.  Select "Create Account", enter your email address (use a real address that you have access to today), and assign a password.
 
