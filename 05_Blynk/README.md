@@ -1,5 +1,5 @@
 # Blynk
-[Blynk](blynk.cc/getting-started/) is the result of a successful Kickstarter campaign to create a mobile application front-end for your own connected projects.  Blynk recently moved to a "freemium" model where you buy "Fuel" to create widgets and share the results with your users (they gotta pay the bills too).  For test purposes there is plenty to do without making a purchase, so you can get a feel for the service before spending any money.  Today's demo will rely entirely on the free offering.
+[Blynk](http://blynk.cc/getting-started/) is the result of a successful Kickstarter campaign to create a mobile application front-end for your own connected projects.  Blynk recently moved to a "freemium" model where you buy "Fuel" to create widgets and share the results with your users (they gotta pay the bills too).  For test purposes there is plenty to do without making a purchase, so you can get a feel for the service before spending any money.  Today's demo will rely entirely on the free offering.
 
 ### NOTE: This demo requires an Android or IOS mobile device.
 
