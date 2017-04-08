@@ -1,5 +1,5 @@
 # Blynk
-[Blynk](http://blynk.cc/getting-started/) is the result of a successful Kickstarter campaign to create a mobile application front-end for your own connected projects.  Blynk recently moved to a "freemium" model where you buy "Fuel" to create widgets and share the results with your users (they gotta pay the bills too).  For test purposes there is plenty to do without making a purchase, so you can get a feel for the service before spending any money.  Today's demo will rely entirely on the free offering.
+[Blynk](http://blynk.cc/getting-started/) is the result of a successful Kickstarter campaign to create a mobile application front-end for your own connected projects.  Blynk works as a "freemium" model where you buy "Fuel" to create widgets and share the results with your users (they gotta pay the bills too).  For test purposes there is plenty to do without making a purchase, so you can get a feel for the service before spending any money.  Today's demo will rely entirely on the free offering.
 
 ### NOTE: This demo requires an Android or IOS mobile device.
 
@@ -15,6 +15,9 @@ From the main Blynk screen select "Create New Project".  Enter a name for your p
 
 Check your email account for a message from blynk.cc.  Open the email on your computer and look for the Auth Token which will be a 32-character string of letters and numbers.  Copy the token and switch back to the Arduino IDE on your PC.  Find line 35 in the example sketch and replace "YourAuthToken" with the token provided, like so: `char auth[] = "00112233445566778899aabbccddeeff";`.  On lines 39 and 40, replace "YourNetworkName" and "YourPassword" with the WiFi credentials for your network.  With the Blynk auth token and WiFi creds setup we are ready to upload your sketch to the board.
 
-Once the sketch is uploaded to your board you can now create your control interface in the Blynk mobile app.  With your Project open, click in the empty black area to bring up the Widget Box.  Select "Slider" to place a Slider control into the project.  Repeat this task two more times, placing a total of 3 sliders.
+Once the sketch is uploaded to your board you can now create your control interface in the Blynk mobile app.  With your Project open, click in the empty black area to bring up the Widget Box.
+![Blynk Demo 01](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo01.png)
+
+Select "Slider" to place a Slider control into the project.  Repeat this task two more times, placing a total of 3 sliders.
 
 Press again in the empty background to bring up the Widget Box, and this time select "Value Display".  Finally, repeat the process one last time and select "Graph".  You should now have 5 items in your project.
