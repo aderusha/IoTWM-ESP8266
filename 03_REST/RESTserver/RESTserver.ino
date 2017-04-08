@@ -27,7 +27,7 @@ const int ledBlue = 13;    // Pin labeled GPIO13
 // The port to listen for incoming TCP connections
 #define LISTEN_PORT 80
 
-int ledToggle = 0;
+bool ledToggle = 0;
 
 // Create callbacks for REST commands
 
