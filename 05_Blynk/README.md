@@ -27,7 +27,7 @@ Press again in the empty background to bring up the Widget Box, and this time se
 
 ![Blynk Demo 03](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo03.png)
 
-Press on the first Slider control to configure.  Give the slider a name by pressing on the text "Slider" and entering "Red".
+Press on the first Slider control to configure.  Give the slider a name by pressing on the text "Slider" and entering the text "Red".
 
 ![Blynk Demo 04](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo04.png)
 
@@ -35,6 +35,15 @@ Assign a color to this control by clicking the teardrop shape next to the contro
 
 ![Blynk Demo 05](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo05.png)
 
-Finally, to configure the Output select the word "Pin", and select `Digital` > `gp15 PWM` (reference the [Witty Cloud pin map](https://github.com/aderusha/IoTWM-ESP8266/tree/master/00_Introduction#witty-cloud-pinout) for why we chose this)
+Finally, to configure the Output select the word "Pin", select `Digital` > `gp15 PWM` (reference the [Witty Cloud pin map](https://github.com/aderusha/IoTWM-ESP8266/tree/master/00_Introduction#witty-cloud-pinout) for why we chose this) then select Continue.
 
 ![Blynk Demo 06](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo06.png)
+
+Click the back arrow to return to the Project screen.  Repeat the process above for the other two sliders, assigning one the name "Green", color Green, and pin `gp12 PWM`.  Assign the other slider the name "Blue", color Blue, and pin `gp13 PWM`.  You should now have three named and colored sliders controlling three analog pins.
+
+![Blynk Demo 07](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo07.png)
+
+Now, press on the Value output control to edit.  Assign the name "Button", select a color by pressing the teardrop, and select the Input pin as `Digital` > `gp4 PWM`.  The completed control screen should now look like this:
+
+![Blynk Demo 08](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo08.png)
+
