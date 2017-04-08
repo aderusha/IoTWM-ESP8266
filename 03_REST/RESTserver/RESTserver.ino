@@ -11,9 +11,9 @@
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 
-const char* ssid = "EMBEDED";
-const char* password = "buildit1";
-const char* partner = "10.0.100.1";
+const char* ssid = "wifi";
+const char* password = "password";
+const char* partner = "192.168.0.101";
 
 ESP8266WebServer server(80);
 
@@ -62,7 +62,7 @@ void handleToggle() {
 
 // handler for "/led".  Use red/green/blue variables in the GET
 // command to set the RGB LED.  Example REST command would look
-// like this:  http://1.2.3.4/led?red=1024&green=0&blue=512
+// like this:  http://192.168.0.100/led?red=1024&green=0&blue=512
 void handleLed() {
   String message = "Received LED command\n";
 
