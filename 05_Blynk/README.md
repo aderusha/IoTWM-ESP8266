@@ -47,3 +47,15 @@ Now, press on the Value output control to edit.  Assign the name "Button", selec
 
 ![Blynk Demo 08](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo08.png)
 
+Finally, configure the Graph control with the name `LDR`, assign it a color, set the input pin to `Analog` > `adc0`, and switch the Style from `Bar` to `Line`.
+
+![Blynk Demo 09](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo09.png)
+
+Your completed Project should look like the image below.  Now press the "Play" icon in the top right to start your application!
+
+![Blynk Demo 10](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo10.png)
+
+Adjust the sliders on the mobile application and observe the RGB LED.  Press the button on the board, and try bringing the board's Light Detecting Resistor into and out of the light.
+
+![Blynk Demo 11](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo11.png)
+
