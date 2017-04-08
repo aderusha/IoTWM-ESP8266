@@ -36,6 +36,16 @@ void setup() {
   for (int i = 0; i < 512; i++)
     EEPROM.write(i, 0);
 
+  // Set LED to green while clearing WiFiManager settings
+  digitalWrite(ledRed, LOW);
+  digitalWrite(ledGreen, HIGH);
+  digitalWrite(ledBlue, LOW);
+
+  // Clear WiFiManager settings, wherever they live
+  Serial.println("Clearing WiFiManager settings...");
+  WiFiManager wifiManager;
+  wifiManager.resetSettings();
+  
   // Set LED to red while formatting SPIFFS
   digitalWrite(ledRed, HIGH);
   digitalWrite(ledGreen, LOW);
@@ -44,20 +54,8 @@ void setup() {
   // Format SPIFFS
   Serial.println("Formatting SPIFFS...");
   SPIFFS.format();
-
-  // Set LED to purple while clearing WiFiManager settings
-  digitalWrite(ledRed, HIGH);
+  digitalWrite(ledRed, LOW);  
   digitalWrite(ledGreen, LOW);
-  digitalWrite(ledBlue, HIGH);
-
-  // Clear WiFiManager settings, wherever they live
-  Serial.println("Clearing WiFiManager settings...");
-  WiFiManager wifiManager;
-  wifiManager.resetSettings();
-
-  // Set LED to green when completed
-  digitalWrite(ledRed, LOW);
-  digitalWrite(ledGreen, HIGH);
   digitalWrite(ledBlue, LOW);
 }
 
