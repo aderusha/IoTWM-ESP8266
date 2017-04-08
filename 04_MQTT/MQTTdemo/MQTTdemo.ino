@@ -23,11 +23,11 @@ const String your_name = "YourName";
 const String partner_name = "PartnerName";
 
 // Update these with values suitable for your network.
-const char* ssid = "EMBEDED";
-const char* password = "buildit1";
+const char* ssid = "wifi";
+const char* password = "password";
 
-const char* mqtt_broker = "test.mosquitto.org";
-const char* mqtt_topic_base = "IoTWM-ESP8266";
+const char* mqtt_broker = "broker.mqttdashboard.com";
+const char* mqtt_topic_base = "OST-IoT";
 
 // setup topic and subscription strings
 const String mqtt_topic = String(mqtt_topic_base) + "/" + your_name;
