@@ -25,9 +25,7 @@ Select "Slider" to place a Slider control into the project.  Repeat this task tw
 
 Press again in the empty background to bring up the Widget Box, and this time select "Value Display".  Finally, repeat the process one last time and select "Graph".  You should now have 5 items in your project.
 
-![Blynk Demo 03](
-
-https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo03.png)
+![Blynk Demo 03](https://github.com/aderusha/IoTWM-ESP8266/blob/master/Images/BlynkDemo03.png)
 
 Press on the first Slider control to configure.  Give the slider a name by pressing on the text "Slider" and entering "Red".
 
