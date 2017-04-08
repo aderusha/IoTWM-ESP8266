@@ -41,23 +41,29 @@ void handleRoot() {
   message += "<a href=/led?red=0&green=0&blue=1024>LED Blue</a><br>\n";
   message += "</body></html>";
   server.send(200, "text/html", message);
+  Serial.println(message);
 }
 
 // handler to toggle LED
 void handleToggle() {
   ledToggle = !ledToggle;
-  digitalWrite(ledRed, ledToggle);
-  digitalWrite(ledGreen, ledToggle);
-  digitalWrite(ledBlue, ledToggle);
+
   String message = "<html><body><h1>LED Toggle ";
   if (ledToggle) {
     message += "on";
+    analogWrite(ledRed, 1024);
+    analogWrite(ledGreen, 1024);
+    analogWrite(ledBlue, 1024);
   }
   else {
     message += "off";
+    analogWrite(ledRed, 0);
+    analogWrite(ledGreen, 0);
+    analogWrite(ledBlue, 0);
   }
   message += "</h1></body></html>";
   server.send(200, "text/html", message);
+  Serial.println(message);
 }
 
 // handler for "/led".  Use red/green/blue variables in the GET
@@ -68,28 +74,25 @@ void handleLed() {
 
   if (server.arg("red") != "") {
     String redString = server.arg("red");
-    int redValue = redString.toInt();
-    analogWrite(ledRed, redValue);
+    analogWrite(ledRed, redString.toInt());
     message += "Red: ";
-    message += redValue;
+    message += redString;
     message += "\n";
   }
 
   if (server.arg("green") != "") {
     String greenString = server.arg("green");
-    int greenValue = greenString.toInt();
-    analogWrite(ledGreen, greenValue);
+    analogWrite(ledGreen, greenString.toInt());
     message += "Green: ";
-    message += greenValue;
+    message += greenString;
     message += "\n";
   }
 
   if (server.arg("blue") != "") {
     String blueString = server.arg("blue");
-    int blueValue = blueString.toInt();
-    analogWrite(ledBlue, blueValue);
+    analogWrite(ledBlue, blueString.toInt());
     message += "Blue: ";
-    message += blueValue;
+    message += blueString;
     message += "\n";
   }
 
@@ -122,6 +125,7 @@ void handleNotFound() {
     message += " " + server.argName(i) + ": " + server.arg(i) + "\n";
   }
   server.send(404, "text/plain", message);
+  Serial.println(message);
 }
 
 // Send a REST command to another device
@@ -152,12 +156,11 @@ void partnerToggle() {
   Serial.println("HTTP client connection closed");
 }
 
-
 void setup(void) {
   pinMode(inputLDR, INPUT);    // initialize the LDR as an input
   pinMode(inputButton, INPUT); // initialize the button as an input
-  pinMode(ledRed, OUTPUT);     // Initialize the blue LED pin as an output
-  pinMode(ledGreen, OUTPUT);   // Initialize the blue LED pin as an output
+  pinMode(ledRed, OUTPUT);     // Initialize the red LED pin as an output
+  pinMode(ledGreen, OUTPUT);   // Initialize the green LED pin as an output
   pinMode(ledBlue, OUTPUT);    // Initialize the blue LED pin as an output
 
   Serial.begin(115200);
@@ -195,7 +198,7 @@ void loop(void) {
   server.handleClient();
 
   // run an HTTP request if the local button is pressed
-  int buttonValue = !digitalRead(inputButton);
+  bool buttonValue = !digitalRead(inputButton);
   if (buttonValue) {
     partnerToggle();
   }
